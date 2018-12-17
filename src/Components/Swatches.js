@@ -59,7 +59,7 @@ class Swatches extends Component {
                              clearSelection={this.clearSelection}/>
                     :
                     <React.Fragment>
-                        {pages[active_page].map(s =>
+                        {pages[active_page] && pages[active_page].map(s =>
                             <Grid key={`${s.root}-${s.color}`}
                                   item
                                   sm={3}>
